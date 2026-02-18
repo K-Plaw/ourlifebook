@@ -1,0 +1,17 @@
+.static-bg-layout {
+  position: fixed;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    #d9cfbd 90%,
+    #8b4a2b 10%
+  );
+
+  overflow: hidden; /*no background scroll*/
+
+  /* Make this a positioning context */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
