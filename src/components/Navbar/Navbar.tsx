@@ -63,14 +63,40 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="mobile-menu">
-          <div className="mobile-link">LoveStory</div>
-          <div className="mobile-link">Family Tree</div>
-          <div className="mobile-link">Roadmap</div>
-        </div>
+        <>
+          <div
+            className="overlay"
+            onClick={() => setMenuOpen(false)}
+          />
+
+          <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+            <div className="mobile">
+              &nbsp;
+            </div>
+            <div className="mobile-link" onClick={() => setMenuOpen(false)}>
+              LoveStory
+            </div>
+            <div className="mobile-link" onClick={() => setMenuOpen(false)}>
+              Family Tree
+            </div>
+            <div className="mobile-link" onClick={() => setMenuOpen(false)}>
+              Roadmap
+            </div>
+          </div>
+
+          {/* Floating Close Button */}
+          <button
+            className="close-button"
+            onClick={() => setMenuOpen(false)}
+          >
+            ✕
+          </button>
+        </>
       )}
+
     </nav>
-  );
+);
 };
+
 
 export default Navbar;
