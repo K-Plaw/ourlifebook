@@ -4,12 +4,12 @@ import localFont from 'next/font/local';
 export const daydream = localFont({
   src: [
     {
-      path: '/fonts/Daydream.woff2',
+      path: '../public/fonts/daydream.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '/fonts/Daydream.woff',
+      path: '../public/fonts/daydream.ttf',
       weight: '400',
       style: 'normal',
     },
