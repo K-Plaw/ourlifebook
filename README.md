@@ -147,7 +147,7 @@ App will run at:
 http://mapyzee.life
 ```
 
-### 3. Build for Production
+### 2. Build for Production
 
 ```bash
 npm run build
